@@ -1,0 +1,11 @@
+Pill Image Segmentation:
+    Data documentation
+Alison Rosenzweig and Emma Remy
+
+The majority of our data was provided to us by Professor Soni and originated from the NLM NIH PIR Challenge. Of the files we were given access to by Professor Soni, we used: the reference and customer-quality images in the "dr" and "dc" subdirectories, as well as the "groundTruthTable.csv" matching reference image filenames to corresponding customer quality image names.
+
+We reformatted the "groundTruthTable.csv" slightly using R, the code for which is included in this directory as "reformat.R". We ran this code only once, and use the output csv "groundTruth_refs.csv" when actually running our code.
+
+We also hand-segmented around 50 images, which we heavily rely on for evaluation of segmentation methods. These images are stored in "scratch" and are relatively large files, so we are currently not including them in our data submission.
+
+In "scratch", we also saved segmented versions of all the reference images produced with our threshold to distance from median code.
